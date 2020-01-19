@@ -5,14 +5,7 @@
 </head>
 <body>
 <script>
-const hi='https://api.github.com/'
-async function getiss() {
-const response = await fetch('hi');
-const data=await response.json();
-console.log(data);
-}
-getiss();
-  //hi//
+$.getJSON("https://api.wheretheiss.at/v1/satellites/25544",function(data){}); 
 </script>
 </body>
 </html>
