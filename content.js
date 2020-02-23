@@ -3,6 +3,6 @@
 
 function alertCookie() {
 a = document.getElementById("take").value;
-cookies.set("name",a);
+cookies.set("name","a");
 
 }
