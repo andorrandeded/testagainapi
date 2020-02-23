@@ -3,6 +3,6 @@
 
 function alertCookie() {
 a = document.getElementById("take").value;
-cookies.set("name","a");
+document.cookie = "name=oeschger";
 
 }
