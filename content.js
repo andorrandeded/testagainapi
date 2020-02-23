@@ -3,6 +3,6 @@
 
 function alertCookie() {
 cookievalue=escape(document.getElementById("take").value);
-document.cookie ="name=SAID";expires=Mon,24-Feb-2020 13:00:00 UTC";
+document.cookie ="name=SAID";expires= new Date(2020 , 2 , 4).toUTCString()
 
 }
