@@ -1,7 +1,8 @@
 
-
-document.cookie = "name=oeschger";
-document.cookie = "favorite_food=tripe";
+a = document.getElementById("take").value;
+setTimeout (function(){
+cookies.set("name",a);
+},2000);
 function alertCookie() {
-  alert(document.cookie);
+document.getElementById("take1").value=cookies.get("name");
 }
