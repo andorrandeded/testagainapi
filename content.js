@@ -2,7 +2,7 @@
 
 
 function alertCookie() {
-a = document.getElementById("take").value;
-document.cookie ="name=abd";
+cookievalue=escape(document.getElementById("take").value);
+document.cookie ="name="+cookievalue;
 
 }
