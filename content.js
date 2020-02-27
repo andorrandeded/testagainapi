@@ -3,6 +3,7 @@
 
 function alertCookie() {
 document.getElementById("take").value;
-console.log(firebase.database().ref().child("my namo"));  
+dbRef = firebase.database().ref().child("my namo");
+console.log(dbRef.value);  
 
 }
