@@ -30,6 +30,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+var database = firebase.database();
+
 userData= document.getElementById("take");
 dbRef = firebase.database().ref().child("h");
 dbRef.on('value' , snap=> userData.value = snap.val());
