@@ -30,7 +30,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
+  import { auth } from 'firebase/app';
 
 userData= document.getElementById("take1");
 dbRef = firebase.database().ref().child("h");
