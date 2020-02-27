@@ -8,7 +8,7 @@
     <script src="content.js"></script>
 </head>
 <body>
-
+<pre id="take1"></pre>
 
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
 
@@ -32,7 +32,7 @@
   firebase.analytics();
 
 
-userData= document.getElementById("take");
+userData= document.getElementById("take1");
 dbRef = firebase.database().ref().child("h");
 dbRef.on('value' , snap=> userData.value = snap.val());
    
