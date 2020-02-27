@@ -28,8 +28,14 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+userData= document.getElementById("take");
+dbRef = firebase.database().ref().child("my namo");
+dbRef.on('value' , snap=> userData.value = snap.val());
+   
+   
+   
 </script>
-    name<input id="take"></input>
+  <input id="take"></input>
 
 <button onclick="alertCookie()">Show cookies</button>
     
