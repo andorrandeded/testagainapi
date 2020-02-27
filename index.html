@@ -8,15 +8,27 @@
     <script src="content.js"></script>
 </head>
 <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.9.1/firebase-analytics.js"></script>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCywpnEYimtpM82G5PtgkI4vvBxyIVKAXw",
+    authDomain: "myfarst-8163c.firebaseapp.com",
+    databaseURL: "https://myfarst-8163c.firebaseio.com",
+    projectId: "myfarst-8163c",
+    storageBucket: "myfarst-8163c.appspot.com",
+    messagingSenderId: "398712145622",
+    appId: "1:398712145622:web:7eadea70d4e28009172b77",
+    measurementId: "G-HQMESHXVLP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     name<input id="take"></input>
 
 <button onclick="alertCookie()">Show cookies</button>
